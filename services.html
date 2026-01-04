@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Services | Mehrops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Mehrops</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html" class="btn">Get Quote</a>
+  </nav>
+</header>
+
+<section class="hero" style="
+  min-height: 50vh;
+  background:
+    linear-gradient(rgba(11,15,26,0.7), rgba(11,15,26,0.9)),
+    url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');
+  background-size: cover;
+  background-position: center;
+">
+  <div class="hero-content">
+    <h1>Our Services</h1>
+    <p>Practical automation systems that save time and close more leads.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>AI Follow-Up Systems</h3>
+    <p>
+      Automated email and SMS follow-ups that respond instantly,
+      re-engage cold leads, and stop opportunities from falling
+      through the cracks.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Intake & CRM Automation</h3>
+    <p>
+      Forms that automatically feed Google Sheets or CRMs,
+      trigger notifications, assign tasks, and keep everything
+      organized without manual work.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Custom n8n Workflows</h3>
+    <p>
+      Purpose-built automations for operations, reporting,
+      routing, internal alerts, and integrations between tools.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Lead Routing & Notifications</h3>
+    <p>
+      Instantly route leads to the right person and notify staff
+      via email, SMS, or Slack so nothing is missed.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Process Cleanup & Optimization</h3>
+    <p>
+      We analyze how your business actually runs and rebuild
+      broken or manual processes into clean, reliable systems.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Scalable Automation Foundations</h3>
+    <p>
+      Start simple and expand later. Everything we build is
+      designed so new features can be added without rework.
+    </p>
+  </div>
+</section>
+
+<section class="hero" style="min-height: 40vh;">
+  <div class="hero-content">
+    <h2>Not sure what you need yet?</h2>
+    <p>
+      Tell us how your business works today and we’ll map out
+      what can be automated.
+    </p>
+    <a href="contact.html" class="btn big">Get a Free Automation Plan</a>
+  </div>
+</section>
+
+<footer class="footer">
+  © <span id="year"></span> Mehrops. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
