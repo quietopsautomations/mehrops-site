@@ -110,3 +110,59 @@ a {
     font-size: 36px;
   }
 }
+/* ---------- Contact Form Styling ---------- */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+form label {
+  grid-column: span 2;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 14px;
+}
+
+form textarea {
+  grid-column: span 2;
+  resize: vertical;
+}
+
+form button {
+  grid-column: span 2;
+  cursor: pointer;
+}
+
+/* Card look for the form container */
+.feature form {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+/* Mobile fix */
+@media (max-width: 700px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form label,
+  form textarea,
+  form button {
+    grid-column: span 1;
+  }
+}
