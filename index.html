@@ -61,18 +61,18 @@
 <!-- Chatbot Widget -->
 <style>
   #chatbot-container {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 380px;
-    height: 520px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.45);
-    z-index: 9999;
-    display: none;
-    background: #0b0f1a;
-  }
+  position: fixed;
+  bottom: 90px; /* leaves space for toggle */
+  right: 24px;
+  width: 380px;
+  height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+  z-index: 9999;
+  display: none;
+  background: #0b0f1a;
+}
 
   #chatbot-container iframe {
     width: 100%;
@@ -80,19 +80,36 @@
     border: none;
   }
 
-  #chatbot-toggle {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    background: linear-gradient(135deg, #5b7cfa, #8fa3ff);
-    color: #fff;
-    border-radius: 999px;
-    padding: 14px 18px;
-    font-weight: 600;
-    cursor: pointer;
-    z-index: 10000;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  
+#chatbot-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #5b7cfa, #8fa3ff);
+  color: #fff;
+  border-radius: 999px;
+  padding: 14px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+  /* ---------- Mobile Chat Layout ---------- */
+@media (max-width: 768px) {
+  #chatbot-container {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    height: 75vh;
+    bottom: 80px;
   }
+
+  #chatbot-toggle {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
 </style>
 
 <div id="chatbot-toggle">Chat with us</div>
