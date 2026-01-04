@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Get a Quote | Mehrops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Mehrops</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html" class="btn">Get Quote</a>
+  </nav>
+</header>
+
+<section class="hero" style="
+  min-height: 45vh;
+  background:
+    linear-gradient(rgba(11,15,26,0.75), rgba(11,15,26,0.9)),
+    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+  background-size: cover;
+  background-position: center;
+">
+  <div class="hero-content">
+    <h1>Get a Quote</h1>
+    <p>Tell us what you want automated and we’ll map out a plan.</p>
+  </div>
+</section>
+
+<section class="features">
+
+  <div class="feature" style="max-width:600px; margin:auto;">
+    <form
+      action="https://formsubmit.co/YOUR_EMAIL_HERE"
+      method="POST">
+
+      <input type="hidden" name="_subject" value="New Quote Request - Mehrops">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <label>First Name</label>
+      <input type="text" name="first_name" required>
+
+      <label>Last Name</label>
+      <input type="text" name="last_name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Business Name</label>
+      <input type="text" name="business">
+
+      <label>What do you want automated?</label>
+      <textarea name="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn big" style="margin-top:16px;">
+        Request Quote
+      </button>
+    </form>
+  </div>
+
+</section>
+
+<footer class="footer">
+  © <span id="year"></span> Mehrops. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
