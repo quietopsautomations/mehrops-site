@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About | Mehrops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Mehrops</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html" class="btn">Get Quote</a>
+  </nav>
+</header>
+
+<section class="hero" style="
+  min-height: 50vh;
+  background:
+    linear-gradient(rgba(11,15,26,0.7), rgba(11,15,26,0.9)),
+    url('https://images.unsplash.com/photo-1552664730-d307ca884978');
+  background-size: cover;
+  background-position: center;
+">
+  <div class="hero-content">
+    <h1>About Mehrops</h1>
+    <p>Automation built for real businesses — not theory.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>Built for Operators</h3>
+    <p>
+      Mehrops was created to solve real operational problems:
+      missed follow-ups, manual intake, broken handoffs, and
+      disconnected tools.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Automation That Makes Sense</h3>
+    <p>
+      We don’t over-engineer. Every system is designed so staff
+      can use it easily and owners can trust it.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Scalable by Design</h3>
+    <p>
+      Start simple. Upgrade later. Every Mehrops system is built
+      to grow with your business.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  © <span id="year"></span> Mehrops. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
