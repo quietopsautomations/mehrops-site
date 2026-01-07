@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Service Area | Mehrops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Mehrops</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="location.html" class="active">Location</a>
+    <a href="contact.html" class="btn">Get Quote</a>
+  </nav>
+</header>
+
+<section class="hero" style="
+  min-height: 45vh;
+  background:
+    linear-gradient(rgba(11,15,26,0.75), rgba(11,15,26,0.9)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
+  background-size: cover;
+  background-position: center;
+">
+  <div class="hero-content">
+    <h1>Our Service Area</h1>
+    <p>Automation and AI support for businesses nationwide.</p>
+  </div>
+</section>
+
+<section class="features">
+
+  <div class="feature" style="max-width:800px; margin:auto;">
+    <h3>Where We Operate</h3>
+    <p>
+      Mehrops is a service-area business providing automation and AI
+      solutions to clients across the United States. While we do not
+      operate a public storefront, we work with organizations both
+      locally and remotely.
+    </p>
+    <p>
+      Our systems are designed to support teams regardless of location,
+      allowing us to deliver reliable automation solutions wherever
+      your business operates.
+    </p>
+  </div>
+
+  <div class="feature" style="max-width:900px; margin:auto;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d0!3d0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1sen!2sus!5e0!3m2!1sen!2sus!6m8!1m7!1sCAoSLEFGMVFpcE1mZk5hZ3lYb1l4d2pFTF9PZk5yR0RDT2h6M3FhSEpOR3ZW!2m2!1d0!2d0!7e81!8m2!3d0!4d0"
+      width="100%"
+      height="420"
+      style="border:0; border-radius:16px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</section>
+
+<section class="hero" style="min-height: 35vh;">
+  <div class="hero-content">
+    <h2>Have questions about working with us?</h2>
+    <p>We’re happy to explain how our services fit your location and needs.</p>
+    <a href="contact.html" class="btn big">Contact Mehrops</a>
+  </div>
+</section>
+
+<footer class="footer">
+  © <span id="year"></span> Mehrops. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
